@@ -1,0 +1,19 @@
+
+/*Components*/
+@import 'components/colors';
+@import 'components/fonts';
+
+/* Bases*/
+@import 'bases';
+@import 'mediaqueries';
+
+/*Layout*/
+@import 'layouts/header';
+@import 'layouts/footer';
+
+/*Pages*/
+@import 'pages/homepage';
+@import 'pages/gallery';
+@import 'pages/prices-services';
+@import 'pages/contact';
+

@@ -1,3 +1,46 @@
-h1 {
-    color: red;
+/*Components*/
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap");
+/* Bases*/
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  background-color: white;
 }
+
+/*Layout*/
+.nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listmenu, .listRS {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+.listmenu .li, .listmenu a, .listRS .li, .listRS a {
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/*Pages*/
+
+/*# sourceMappingURL=style.css.map */
