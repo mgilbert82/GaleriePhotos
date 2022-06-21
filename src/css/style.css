@@ -21,17 +21,12 @@
 /*Layout*/
 header {
   position: fixed;
-  height: 12vh;
+  height: 5rem;
   width: 100%;
   top: 0;
   left: 0;
   background-color: white;
   padding: 0.6rem;
-}
-header .nav {
-  padding-top: auto;
-  padding-bottom: auto;
-  background-color: white;
 }
 
 .mobile {
@@ -41,6 +36,8 @@ header .nav {
   height: 9vh;
 }
 .mobile #logo {
+  left: 2%;
+  height: 4.3rem;
   position: relative;
   z-index: 20;
 }
@@ -52,6 +49,7 @@ header .nav {
   align-items: center;
   cursor: pointer;
   position: relative;
+  right: 5%;
   z-index: 20;
 }
 
@@ -81,7 +79,7 @@ header .nav {
   left: 0;
   width: 100%;
   height: 50vh;
-  padding-top: 5rem;
+  padding-top: 6rem;
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.682);
@@ -101,7 +99,7 @@ header .nav {
   margin: 5px 0;
   padding: 5px 2px;
   overflow: hidden;
-  transition: 1s all ease;
+  transition: 0.5s all ease;
 }
 .menu .menu__list .btn::before {
   background-color: #363062;
@@ -113,15 +111,15 @@ header .nav {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  transition: all 0.6s ease;
+  transition: all 0.4s ease-out;
 }
 .menu .menu__list .btn1::before {
   width: 100%;
   height: 0;
-  transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 .menu .menu__list .btn:hover::before {
-  height: 630%;
+  height: 500%;
 }
 .menu .menu__list .btn:hover {
   color: white;
@@ -130,13 +128,13 @@ header .nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 1.2em;
+  padding-bottom: 2.5em;
   height: 8vh;
 }
 .menu .menu__RS li a, .menu .menu__RS li img {
   color: #363062;
-  width: 2.3rem;
-  padding: 5px;
+  width: 1.8rem;
+  padding: 0.2rem;
 }
 .menu .menu__RS li #logofb:hover {
   transform: scale(1.2);
@@ -145,6 +143,80 @@ header .nav {
   transform: scale(1.2);
 }
 
+@media screen and (min-width: 1280px) {
+  header {
+    position: fixed;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+  }
+  header nav {
+    display: inline;
+    justify-content: space-around;
+  }
+  header nav .mobile {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    height: 6rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  header nav .toggle {
+    display: none;
+  }
+  header nav .menu {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+    top: -6rem;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    transform: inherit;
+  }
+  header nav .menu .menu__list {
+    align-items: baseline;
+  }
+  header nav .menu .menu__list li {
+    display: inline-block;
+    flex-direction: row;
+    padding: 1rem;
+    height: 0;
+  }
+  header nav .menu .menu__list .menu__RS {
+    align-items: baseline;
+  }
+  header nav .menu .menu__list .menu__RS li {
+    display: inline-block;
+    flex-direction: row;
+  }
+  header nav .menu .menu__list .menu__RS li a, header nav .menu .menu__list .menu__RS li img {
+    width: 2rem;
+    padding: 5px;
+  }
+}
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363062;
+    color: white;
+    height: 3.5rem;
+    font-family: "Hind Madurai", "sans-serif";
+  }
+}
 /*Pages*/
 
 /*# sourceMappingURL=style.css.map */

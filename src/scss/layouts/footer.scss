@@ -1,0 +1,17 @@
+footer {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $darkBlue;;
+        color: white;
+        height: 3.5rem;
+        font-family: 'Hind Madurai', 'sans-serif';
+    }
+}
+    
