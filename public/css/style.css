@@ -1,44 +1,148 @@
 /*Components*/
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap");
 /* Bases*/
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  background-color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.bkg-img {
+  background: url("/public/img/Grossesse/pregnancy2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 /*Layout*/
-.nav {
+header {
+  position: fixed;
+  height: 12vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 0.6rem;
+}
+header .nav {
+  padding-top: auto;
+  padding-bottom: auto;
+  background-color: white;
+}
+
+.mobile {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
+}
+.mobile #logo {
+  position: relative;
+  z-index: 20;
+}
+
+.toggle {
+  display: block;
+  width: 1.5em;
+  color: #363062;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+.openbtn {
+  display: block;
+}
+
+.closebtn {
+  display: none;
+}
+
+.open .openbtn {
+  display: none;
+}
+
+.open .closebtn {
+  display: block;
+}
+
+.open .menu {
+  transform: translateX(0);
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  padding-top: 5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.682);
+  transform: translateX(-100%);
 }
-
-.logo {
-  padding: 10px;
+.menu .menu__list {
+  display: block;
+  text-align: center;
+  height: 30vh;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
+.menu .menu__list .btn {
+  position: relative;
+  display: block;
+  color: #363062;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px 0;
+  padding: 5px 2px;
+  overflow: hidden;
+  transition: 1s all ease;
 }
-
-.listmenu, .listRS {
+.menu .menu__list .btn::before {
+  background-color: #363062;
+  content: "";
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+.menu .menu__list .btn1::before {
+  width: 100%;
+  height: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.menu .menu__list .btn:hover::before {
+  height: 630%;
+}
+.menu .menu__list .btn:hover {
+  color: white;
+}
+.menu .menu__RS {
   display: flex;
-  list-style-type: none;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  padding-bottom: 1.2em;
+  height: 8vh;
 }
-.listmenu .li, .listmenu a, .listRS .li, .listRS a {
-  font-weight: bold;
-  padding: 10px;
-  text-decoration: none;
+.menu .menu__RS li a, .menu .menu__RS li img {
+  color: #363062;
+  width: 2.3rem;
+  padding: 5px;
+}
+.menu .menu__RS li #logofb:hover {
+  transform: scale(1.2);
+}
+.menu .menu__RS li #logoinsta:hover {
+  transform: scale(1.2);
 }
 
 /*Pages*/

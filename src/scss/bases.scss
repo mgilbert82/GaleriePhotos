@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bkg-img {
+    background: url('/public/img/Grossesse/pregnancy2.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,134 @@
+header {
+    position: fixed;
+    height: 12vh;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: white;
+    padding: 0.6rem;
+
+    .nav {
+        padding-top: auto;
+        padding-bottom: auto;
+        background-color: white;
+}
+
+
+}
+.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+
+    #logo {
+        position: relative;
+        z-index: 20;
+}}
+
+.toggle {
+    display: block;
+    width: 1.5em;
+    color:$darkBlue;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+
+.openbtn {
+    display: block;
+}
+
+.closebtn {
+    display: none;
+}
+
+.open .openbtn {
+    display: none;
+}
+
+.open .closebtn {
+    display: block;
+}
+
+.open .menu {
+    transform: translateX(0);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.682);
+    transform: translateX(-100%);
+
+    .menu__list {
+        display: block;
+        text-align: center;
+        height: 30vh;
+
+        .btn {
+            position: relative;
+            display: block;
+            color:$darkBlue;
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 5px 0;
+            padding: 5px 2px;
+            overflow:hidden;
+            transition: 1s all ease;
+        }
+        .btn::before {
+            background-color: $darkBlue;
+            content: "";
+            width: 30%;
+            height: 30%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: all 0.6s ease;
+        }
+        .btn1::before {
+            width: 100%;
+            height: 0;
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+        .btn:hover::before {
+            height: 630%;
+        }
+        .btn:hover {
+            color: white;
+        }
+    }
+    
+    .menu__RS {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.2em;
+        height: 8vh ;
+        li {
+
+            a, img {
+                color:$darkBlue;
+                width: 2.3rem;
+                padding: 5px;
+            }
+            #logofb:hover {
+                transform: scale(1.2);
+            }
+            #logoinsta:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+

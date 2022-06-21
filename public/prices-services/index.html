@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Cantin - Photographe</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="https://kit.fontawesome.com/508fc1bf5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-    <nav class="menu">
-        <img src="/public/img/svg/logo.svg" alt="logo" class="logo"/>
-        <div class="navbar">
-            <ul class="listmenu">
-                <li><a href="/public/index.html">Accueil</a></li>
-                <li><a href="/public/gallery/">Galeries</a></li>
-                <li><a href="/public/prices-services">Tarifs et prestations</a></li>
-                <li><a href="/public/contact">Contact</a></li>
+    <nav>
+        <div class="mobile">
+            <a href="/public/index.html"><img src="/public/img/svg/logo.svg" alt="logo" id="logo"/></a>
+            <div class="toggle">
+                <img src="/public/img/svg/bar.svg" alt="logo" class="openbtn"/>
+                <img src="/public/img/svg/cross.svg" alt="logo" class="closebtn"/>
+            </div>
+        </div>
+    
+        <div class="menu">
+            <ul class="menu__list">
+                <li><a href="/public/index.html" class="btn btn1">Accueil</a></li>
+                <li><a href="/public/gallery/" class="btn btn1">Galeries</a></li>
+                <li><a href="/public/prices-services" class="btn btn1">Tarifs et prestations</a></li>
+                <li><a href="/public/contact" class="btn btn1">Contact</a></li>
             </ul>
-            <ul class="listRS">
-                <li><a href="#"><img src="/public/img/svg/logofb.svg" alt="logors" class="logofb"/></a></li>
-                <li><a href="#"><img src="/public/img/svg/logoinsta.svg" alt="logors" class="logoinsta"/></a></li>
+
+            <ul class="menu__RS">
+                <li><a href="#"><img src="/public/img/svg/logofb.svg" alt="logors" id="logofb"/></a></li>
+                <li><a href="#"><img src="/public/img/svg/logoinsta.svg" alt="logors" id="logoinsta"/></a></li>
             </ul>
         </div>
     </nav>
 </header>
     
+
+        
 <h1 class="services-title">Mes services</h1>
 
 <div class="card">
@@ -77,8 +88,11 @@
 </div>
     
     
+
     <footer>
     <p>Copyright 2021 <img src="/public/img/svg/copyright.svg" alt="copyright"> Tous droits réservés</p>
 </footer>
+    
 </body>
+<script src="/public/js/app.js"></script>
 </html>

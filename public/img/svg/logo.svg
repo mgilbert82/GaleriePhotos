@@ -1,40 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180.385" height="93.931" viewBox="0 0 180.385 93.931">
-  <g id="Groupe_243" data-name="Groupe 243" transform="translate(1)">
-    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(56.263 2.689)" fill="#fff" stroke="#302b57" stroke-width="1">
-      <rect width="52.429" height="38.985" rx="6" stroke="none"/>
-      <rect x="0.5" y="0.5" width="51.429" height="37.985" rx="5.5" fill="none"/>
-    </g>
-    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(61.64 1.344)" fill="#fff" stroke="#302b57" stroke-width="1">
-      <rect width="5.377" height="2.689" rx="1.344" stroke="none"/>
-      <rect x="0.5" y="0.5" width="4.377" height="1.689" rx="0.844" fill="none"/>
-    </g>
-    <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(68.362)" fill="#fff" stroke="#302b57" stroke-width="1">
-      <rect width="8.066" height="4.033" rx="2" stroke="none"/>
-      <rect x="0.5" y="0.5" width="7.066" height="3.033" rx="1.5" fill="none"/>
-    </g>
-    <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(92.559 5.377)" fill="#fff" stroke="#302b57" stroke-linecap="round" stroke-width="1">
-      <rect width="10.755" height="4.033" rx="1" stroke="none"/>
-      <rect x="0.5" y="0.5" width="9.755" height="3.033" rx="0.5" fill="none"/>
-    </g>
-    <line id="Ligne_20" data-name="Ligne 20" x2="48.508" transform="translate(58.419 12.084)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="1" stroke-dasharray="2"/>
-    <line id="Ligne_21" data-name="Ligne 21" x2="49.74" transform="translate(57.607 36.297)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="1" stroke-dasharray="2"/>
-    <g id="Groupe_120" data-name="Groupe 120" transform="translate(71.05 6.722)">
-      <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(0 0)" fill="#fff" stroke="#302b57" stroke-width="1">
-        <circle cx="13.443" cy="13.443" r="13.443" stroke="none"/>
-        <circle cx="13.443" cy="13.443" r="12.943" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="142" height="74.268" viewBox="0 0 142 74.268">
+  <g id="Groupe_218" data-name="Groupe 218" transform="translate(0.824)">
+    <g id="Groupe_121" data-name="Groupe 121" transform="translate(43.782)">
+      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(0 1.637)" fill="#fff" stroke="#302b57" stroke-width="1">
+        <rect width="41.736" height="31.098" rx="6" stroke="none"/>
+        <rect x="0.5" y="0.5" width="40.736" height="30.098" rx="5.5" fill="none"/>
       </g>
-      <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(2.689 2.689)" fill="#fff" stroke="#302b57" stroke-width="1">
-        <circle cx="10.755" cy="10.755" r="10.755" stroke="none"/>
-        <circle cx="10.755" cy="10.755" r="10.255" fill="none"/>
+      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(4.91 0.818)" fill="#fff" stroke="#302b57" stroke-width="1">
+        <rect width="4.092" height="2.455" rx="1.228" stroke="none"/>
+        <rect x="0.5" y="0.5" width="3.092" height="1.455" rx="0.728" fill="none"/>
+      </g>
+      <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(9.82)" fill="#fff" stroke="#302b57" stroke-width="1">
+        <rect width="6.547" height="3.273" rx="1.637" stroke="none"/>
+        <rect x="0.5" y="0.5" width="5.547" height="2.273" rx="1.137" fill="none"/>
+      </g>
+      <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(28.642 4.092)" fill="#fff" stroke="#302b57" stroke-linecap="round" stroke-width="1">
+        <rect width="9.002" height="3.273" rx="1" stroke="none"/>
+        <rect x="0.5" y="0.5" width="8.002" height="2.273" rx="0.5" fill="none"/>
+      </g>
+      <line id="Ligne_20" data-name="Ligne 20" x2="38.054" transform="translate(2.046 9.411)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="1" stroke-dasharray="2"/>
+      <line id="Ligne_21" data-name="Ligne 21" x2="38.463" transform="translate(1.637 28.642)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="1" stroke-dasharray="2"/>
+      <g id="Groupe_120" data-name="Groupe 120" transform="translate(12.275 5.728)">
+        <g id="Ellipse_8" data-name="Ellipse 8" fill="#fff" stroke="#302b57" stroke-width="1">
+          <circle cx="10.229" cy="10.229" r="10.229" stroke="none"/>
+          <circle cx="10.229" cy="10.229" r="9.729" fill="none"/>
+        </g>
+        <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(1.637 1.637)" fill="#fff" stroke="#302b57" stroke-width="1">
+          <circle cx="8.593" cy="8.593" r="8.593" stroke="none"/>
+          <circle cx="8.593" cy="8.593" r="8.093" fill="none"/>
+        </g>
+      </g>
+      <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(9.82 15.549)" fill="#fff" stroke="#302b57" stroke-width="1">
+        <circle cx="0.818" cy="0.818" r="0.818" stroke="none"/>
+        <circle cx="0.818" cy="0.818" r="0.318" fill="none"/>
       </g>
     </g>
-    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(68.362 20.165)" fill="#fff" stroke="#302b57" stroke-width="1">
-      <ellipse cx="1.344" cy="0.672" rx="1.344" ry="0.672" stroke="none"/>
-      <ellipse cx="1.344" cy="0.672" rx="0.844" ry="0.172" fill="none"/>
-    </g>
-    <text id="Charles_Cantin" data-name="Charles Cantin" transform="translate(15.933 76.428)" fill="#302b57" font-size="24" font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed" font-weight="700"><tspan x="0" y="0">Charles Cantin</tspan></text>
-    <line id="Ligne_25" data-name="Ligne 25" x2="178.385" transform="translate(0 92.931)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
-    <line id="Ligne_26" data-name="Ligne 26" x2="49.03" transform="translate(0 41.814)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
-    <line id="Ligne_27" data-name="Ligne 27" x2="63.634" transform="translate(114.751 41.814)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
+    <text id="Charles_Cantin" data-name="Charles Cantin" transform="translate(12.685 59.918)" fill="#302b57" font-size="19" font-family="BarlowSemiCondensed-Bold, Barlow Semi Condensed" font-weight="700"><tspan x="0" y="0">Charles Cantin</tspan></text>
+    <line id="Ligne_25" data-name="Ligne 25" x2="140" transform="translate(0.176 73.268)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
+    <line id="Ligne_26" data-name="Ligne 26" x2="38" transform="translate(0.176 32.268)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
+    <line id="Ligne_27" data-name="Ligne 27" x2="50" transform="translate(90.176 32.268)" fill="none" stroke="#302b57" stroke-linecap="round" stroke-width="2"/>
   </g>
 </svg>
