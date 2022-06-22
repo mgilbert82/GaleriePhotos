@@ -1,0 +1,63 @@
+.gallery__bkg {
+    background: url('/public/img/Bébé/baby2.jpg');
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+}
+.gallery {
+    position: relative;
+    top:14vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 1rem;
+    h1 {
+        font-family: 'Montserrat', 'Sans-serif';
+        font-size: 5vw;
+        text-align: center;
+        color: white;
+    }
+    .container-category {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        #category-select {
+            font-family: 'Montserrat', 'Sans-serif';
+            font-size: 0.9em;
+            font-weight: 500;
+            text-align: center;
+            color: $darkBlue;
+            border-radius: 20px;
+            width: 12rem;
+            border: 2px solid $darkBlue;
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        background: url('/public/img/Grossesse/pregnancy2.jpg');
+        background-position: center;
+        height: 100vh;
+        text-align: center;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        .center {
+            display: inline-block;
+            margin: 0 auto;       
+        }
+        H1 {
+            font-family: 'Montserrat', 'Sans-serif';
+            font-size: 5vw;
+            text-align: center;
+            color: white;
+    
+        }
+    }
+}
