@@ -1,0 +1,43 @@
+.container {
+    background: url('/public/img/Grossesse/pregnancy2.jpg');
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .center {
+        display: inline-block;
+        margin: 0 auto;       
+    }
+    H1 {
+        font-family: 'Montserrat', 'Sans-serif';
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        background: url('/public/img/Grossesse/pregnancy2.jpg');
+        background-position: center;
+        height: 100vh;
+        text-align: center;
+        background-size: cover;
+        display: grid;
+        place-items: center;
+        .center {
+            display: inline-block;
+            margin: 0 auto;       
+        }
+        H1 {
+            font-family: 'Montserrat', 'Sans-serif';
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+    
+        }
+    }
+}

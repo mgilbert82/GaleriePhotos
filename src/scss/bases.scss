@@ -8,9 +8,12 @@
     text-decoration: none;
 }
 
-.bkg-img {
-    background: url('/public/img/Grossesse/pregnancy2.jpg');
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+body, html {
+    min-width: 100%;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }

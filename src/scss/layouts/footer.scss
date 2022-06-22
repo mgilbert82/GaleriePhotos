@@ -5,13 +5,17 @@ footer {
 @media screen and (min-width: 1280px) {
 
     footer {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $darkBlue;;
         color: white;
-        height: 3.5rem;
+        width: 100%;
         font-family: 'Hind Madurai', 'sans-serif';
+        z-index: 1;
+        bottom: 0;
+        padding: 1rem;
     }
 }
     
