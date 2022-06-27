@@ -12,14 +12,18 @@ title: Charles Cantin - Photographe
     <script src="https://kit.fontawesome.com/508fc1bf5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="container">
+        <!Menu de navigation>
         {% include "header.njk" %}
         
-
-            {{ content | safe }}
-
-        {% include "footer.njk" %}
+        <! Corps du site>
+            <div class="main">
+                {{ content | safe }}
+            </div>
+            
+        <!footer du site>
+            {% include "footer.njk" %}
     </div>
-</body>
 <script src="/public/js/app.js"></script>
+</body>
 </html>

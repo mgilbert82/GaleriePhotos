@@ -9,11 +9,17 @@
 }
 
 body, html {
-    min-width: 100%;
-}
+    width: 100vw;
+    height: 100vh;
 
-.main {
-    position: relative;
-    max-width: 2560px;
-    margin: 0 auto;
+    .container {
+        position: relative;
+        height: fit-content;
+    }
+
+    .main {
+        position: relative;
+        max-width: 2560px;
+        height:100%;
+    }
 }

@@ -1,9 +1,9 @@
-.container {
+.homepage-bkg {
     background: url('/public/img/Grossesse/pregnancy2.jpg');
     background-position: center;
+    width: 100vw;
     height: 100vh;
-    text-align: center;
-    background-size: cover;
+    background-size:cover;
     display: grid;
     place-items: center;
     .center {
@@ -12,27 +12,27 @@
     }
     H1 {
         font-family: 'Montserrat', 'Sans-serif';
-        font-size: 6vw;
+        font-size: 3em;
         text-align: center;
         color: white;
-
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
+    .homepage-bkg {
         background: url('/public/img/Grossesse/pregnancy2.jpg');
         background-position: center;
-        height: 100vh;
-        width: 100%;
-
+        width: 100vw;
         text-align: center;
-        background-size: cover;
+        background-size:cover;
         display: grid;
         place-items: center;
-        .center {
+        h1 {
             display: inline-block;
-            margin: 0 auto;       
+            margin: 0 auto;
+            font-family: 'Hind-Madurai', 'sans-serif';
+            font-weight: 500;
+            font-style: normal;       
         }
         H1 {
             font-family: 'Montserrat', 'Sans-serif';

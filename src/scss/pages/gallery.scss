@@ -2,16 +2,15 @@
     background: url('/public/img/Bébé/baby2.jpg');
     background-position: center;
     height: 100vh;
+    width: 100vw;
     text-align: center;
     background-size: cover;
 }
 .gallery {
     position: relative;
-    top:14vh;
+    top:12vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
     padding: 1rem;
     h1 {
         font-family: 'Montserrat', 'Sans-serif';
@@ -19,11 +18,10 @@
         text-align: center;
         color: white;
     }
-    .container-category {
+    .gallery__category {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        text-align: center;
         #category-select {
             font-family: 'Montserrat', 'Sans-serif';
             font-size: 0.9em;
@@ -34,16 +32,22 @@
             width: 12rem;
             border: 2px solid $darkBlue;
             cursor: pointer;
+            .category-select__value {
+                background-color: white;
+
+            }
+            
         }
     }
 
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
-        background: url('/public/img/Grossesse/pregnancy2.jpg');
+    .gallery__bkg {
+        background: url('/public/img/Bébé/baby2.jpg');
         background-position: center;
         height: 100vh;
+        width: 100vw;
         text-align: center;
         background-size: cover;
         display: grid;
@@ -57,7 +61,29 @@
             font-size: 5vw;
             text-align: center;
             color: white;
-    
+        }
+        .gallery {
+            .gallery__category {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                #category-select {
+                    font-family: 'Montserrat', 'Sans-serif';
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    text-align: center;
+                    color: $darkBlue;
+                    border-radius: 20px;
+                    width: 12rem;
+                    border: 2px solid $darkBlue;
+                    cursor: pointer;
+                    .category-select__value {
+                        background-color: white;
+        
+                    }
+                    
+                }
+            }
         }
     }
 }

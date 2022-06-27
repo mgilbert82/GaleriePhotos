@@ -9,9 +9,11 @@
     <script src="https://kit.fontawesome.com/508fc1bf5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="container">
+        <!Menu de navigation>
         <header>
     <nav>
+        <!Logo et toggle>
         <div class="mobile">
             <a href="/public/index.html"><img src="/public/img/svg/logo.svg" alt="logo" id="logo"/></a>
             <div class="toggle">
@@ -19,30 +21,34 @@
                 <img src="/public/img/svg/cross.svg" alt="logo" class="closebtn"/>
             </div>
         </div>
-    
+
+        <!Menu de navigation>
         <div class="menu">
-            <ul class="menu__list">
+                <ul class="menu__list">
                 <li><a href="/public/index.html" class="btn btn1">Accueil</a></li>
                 <li><a href="/public/gallery/" class="btn btn1">Galeries</a></li>
                 <li><a href="/public/prices-services" class="btn btn1">Tarifs et prestations</a></li>
                 <li><a href="/public/contact" class="btn btn1">Contact</a></li>
             </ul>
 
+            <!Icone réseaux sociaux + barre de recherche>
             <ul class="menu__RS">
                 <li><a href="#"><img src="/public/img/svg/logofb.svg" alt="logors" id="logofb"/></a></li>
                 <li><a href="#"><img src="/public/img/svg/logoinsta.svg" alt="logors" id="logoinsta"/></a></li>
+                <li><img src="/public/img/svg/search.svg" id="searchbar" alt="searchbar"></img></li>
             </ul>
         </div>
     </nav>
 </header>
         
-
-            <div class="gallery__bkg">
+        <! Corps du site>
+            <div class="main">
+                <div class="gallery__bkg">
     <div class="gallery">
-        <div class='container-category'>
+        <div class='gallery__category'>
             <select name="category" id="category-select">
                 <option value="">Choix de la catégorie</option>
-                <option value="grossesse">Grossesse</option>
+                <option value="grossesse" id="category-select__value">Grossesse</option>
                 <option value="mariage">Mariage</option>
                 <option value="portrait">Portrait</option>
                 <option value="famille">Famille</option>
@@ -52,11 +58,13 @@
         </div>
     </div>
 </div>
-
-        <footer>
+            </div>
+            
+        <!footer du site>
+            <footer>
     <p>Copyright 2021 <img src="/public/img/svg/copyright.svg" alt="copyright"> Tous droits réservés</p>
 </footer>
     </div>
-</body>
 <script src="/public/js/app.js"></script>
+</body>
 </html>

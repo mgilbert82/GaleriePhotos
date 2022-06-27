@@ -13,24 +13,30 @@
 }
 
 body, html {
-  min-width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
-
-.main {
+body .container, html .container {
+  position: relative;
+  height: fit-content;
+}
+body .main, html .main {
   position: relative;
   max-width: 2560px;
-  margin: 0 auto;
+  height: 100%;
 }
 
 /*Layout*/
 header {
   position: fixed;
-  height: 5rem;
+  height: 5.5rem;
   width: 100%;
   top: 0;
   left: 0;
   background-color: white;
+  box-shadow: 0 0 5px 0 rgba(130, 115, 151, 0.5);
   padding: 0.6rem;
+  z-index: 1;
 }
 
 .mobile {
@@ -83,7 +89,7 @@ header {
   padding-top: 6rem;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.682);
+  background-color: rgb(255, 255, 255);
   transform: translateX(-100%);
 }
 .menu .menu__list {
@@ -198,61 +204,59 @@ header {
   }
 }
 footer {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3em;
+  background-color: #363062;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding-top: 0.2em;
+  font-family: "Hind Madurai", "sans-serif";
 }
 
-@media screen and (min-width: 1280px) {
-  footer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #363062;
-    color: white;
-    width: 100%;
-    font-family: "Hind Madurai", "sans-serif";
-    z-index: 1;
-    bottom: 0;
-    padding: 1rem;
-  }
-}
 /*Pages*/
-.container {
+.homepage-bkg {
   background: url("/public/img/Grossesse/pregnancy2.jpg");
   background-position: center;
+  width: 100vw;
   height: 100vh;
-  text-align: center;
   background-size: cover;
   display: grid;
   place-items: center;
 }
-.container .center {
+.homepage-bkg .center {
   display: inline-block;
   margin: 0 auto;
 }
-.container H1 {
+.homepage-bkg H1 {
   font-family: "Montserrat", "Sans-serif";
-  font-size: 6vw;
+  font-size: 3em;
   text-align: center;
   color: white;
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .homepage-bkg {
     background: url("/public/img/Grossesse/pregnancy2.jpg");
     background-position: center;
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     background-size: cover;
     display: grid;
     place-items: center;
   }
-  .container .center {
+  .homepage-bkg h1 {
     display: inline-block;
     margin: 0 auto;
+    font-family: "Hind-Madurai", "sans-serif";
+    font-weight: 500;
+    font-style: normal;
   }
-  .container H1 {
+  .homepage-bkg H1 {
     font-family: "Montserrat", "Sans-serif";
     font-size: 5vw;
     text-align: center;
@@ -263,17 +267,16 @@ footer {
   background: url("/public/img/Bébé/baby2.jpg");
   background-position: center;
   height: 100vh;
+  width: 100vw;
   text-align: center;
   background-size: cover;
 }
 
 .gallery {
   position: relative;
-  top: 14vh;
+  top: 12vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: baseline;
   padding: 1rem;
 }
 .gallery h1 {
@@ -282,13 +285,12 @@ footer {
   text-align: center;
   color: white;
 }
-.gallery .container-category {
+.gallery .gallery__category {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  text-align: center;
 }
-.gallery .container-category #category-select {
+.gallery .gallery__category #category-select {
   font-family: "Montserrat", "Sans-serif";
   font-size: 0.9em;
   font-weight: 500;
@@ -299,26 +301,206 @@ footer {
   border: 2px solid #363062;
   cursor: pointer;
 }
+.gallery .gallery__category #category-select .category-select__value {
+  background-color: white;
+}
 
 @media screen and (min-width: 1280px) {
-  .container {
-    background: url("/public/img/Grossesse/pregnancy2.jpg");
+  .gallery__bkg {
+    background: url("/public/img/Bébé/baby2.jpg");
     background-position: center;
     height: 100vh;
+    width: 100vw;
     text-align: center;
     background-size: cover;
     display: grid;
     place-items: center;
   }
-  .container .center {
+  .gallery__bkg .center {
     display: inline-block;
     margin: 0 auto;
   }
-  .container H1 {
+  .gallery__bkg H1 {
     font-family: "Montserrat", "Sans-serif";
     font-size: 5vw;
     text-align: center;
     color: white;
+  }
+  .gallery__bkg .gallery .gallery__category {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .gallery__bkg .gallery .gallery__category #category-select {
+    font-family: "Montserrat", "Sans-serif";
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    color: #363062;
+    border-radius: 20px;
+    width: 12rem;
+    border: 2px solid #363062;
+    cursor: pointer;
+  }
+  .gallery__bkg .gallery .gallery__category #category-select .category-select__value {
+    background-color: white;
+  }
+}
+.bkg-services {
+  position: relative;
+  display: grid;
+  align-items: flex-start;
+  justify-content: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+  top: 10vh;
+  height: 80%;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+.bkg-services .card {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #827397;
+  border-radius: 20px;
+  margin: 0 auto 3em;
+  padding-bottom: 0.5em;
+  width: 70vw;
+  height: fit-content;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s;
+}
+.bkg-services .card .card__img {
+  width: 100%;
+  background-color: black;
+  border-radius: 20px 20px 0 0;
+  height: 100%;
+  overflow: hidden;
+}
+.bkg-services .card .card__img img {
+  display: block;
+  width: inherit;
+  border-radius: 20px 20px 0 0;
+  border: 2px solid #827397;
+  opacity: 1;
+}
+.bkg-services .card .card__img:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.bkg-services .card .card__body {
+  width: 100%;
+  padding: 1em;
+}
+.bkg-services .card .card__body .card__title p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 1.4em;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  color: white;
+  margin-left: 1em;
+}
+.bkg-services .card .card__body .card__line {
+  height: 3px;
+  width: 75%;
+  margin-left: 1em;
+  border-width: 0;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+.bkg-services .card .card__body .card__description {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+.bkg-services .card .card__body .card__description p {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: white;
+  padding-top: 1em;
+}
+.bkg-services .card .card__body .card__price {
+  margin-left: 70%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #E3E2E8;
+  background-color: #E9D5CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 3px 3px rgba(54, 48, 98, 0.3);
+}
+.bkg-services .card .card__body .card__price p {
+  font-family: "Hind Madurai", "sans-serif";
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #363062;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .bkg-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    top: 10vh;
+    height: 95%;
+    margin-top: 3em;
+    margin-bottom: 2.3em;
+  }
+  .bkg-services .card {
+    width: 28vw;
+  }
+  .bkg-services .card .card__body {
+    height: 50%;
+    overflow: hidden;
+  }
+  .bkg-services .card .card__body .card__title p {
+    font-size: 1.2em;
+  }
+  .bkg-services .card .card__body .card__line {
+    width: 60%;
+  }
+  .bkg-services .card .card__body .card__description p {
+    margin: 0.1em;
+    width: 90%;
+    font-size: 1em;
+  }
+  .bkg-services .card .card__body .card__price {
+    margin-left: 70%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #E9D5CA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bkg-services .card .card__body .card__price p {
+    font-family: "Hind Madurai", "sans-serif";
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #363062;
+    text-align: center;
+  }
+  .bkg-services img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+  .bkg-services .card:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+    transition: ease all 0.2s;
+  }
+  .bkg-services .card:hover .card__body {
+    height: 100%;
   }
 }
 

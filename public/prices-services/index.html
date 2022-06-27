@@ -9,9 +9,11 @@
     <script src="https://kit.fontawesome.com/508fc1bf5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="container">
+        <!Menu de navigation>
         <header>
     <nav>
+        <!Logo et toggle>
         <div class="mobile">
             <a href="/public/index.html"><img src="/public/img/svg/logo.svg" alt="logo" id="logo"/></a>
             <div class="toggle">
@@ -19,81 +21,154 @@
                 <img src="/public/img/svg/cross.svg" alt="logo" class="closebtn"/>
             </div>
         </div>
-    
+
+        <!Menu de navigation>
         <div class="menu">
-            <ul class="menu__list">
+                <ul class="menu__list">
                 <li><a href="/public/index.html" class="btn btn1">Accueil</a></li>
                 <li><a href="/public/gallery/" class="btn btn1">Galeries</a></li>
                 <li><a href="/public/prices-services" class="btn btn1">Tarifs et prestations</a></li>
                 <li><a href="/public/contact" class="btn btn1">Contact</a></li>
             </ul>
 
+            <!Icone réseaux sociaux + barre de recherche>
             <ul class="menu__RS">
                 <li><a href="#"><img src="/public/img/svg/logofb.svg" alt="logors" id="logofb"/></a></li>
                 <li><a href="#"><img src="/public/img/svg/logoinsta.svg" alt="logors" id="logoinsta"/></a></li>
+                <li><img src="/public/img/svg/search.svg" id="searchbar" alt="searchbar"></img></li>
             </ul>
         </div>
     </nav>
 </header>
         
+        <! Corps du site>
+            <div class="main">
+                
+<div class="bkg-services">
 
-            
-<h1 class="services-title">Mes services</h1>
-
-<div class="card">
-    <div class="card__img">
-        <img src="#" alt="quotes" class="card__img"/>
-    </div>
-    <div class="card__title">
-        <p>"Mon bébé"</p>
+    <! Tarif pour portrait >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/portrait.jpg" alt="quotes"/>
         </div>
-    <hr class="card__line">
-    <div class="card__text">
-        <p>Photo d’enfant jusqu’à 3 ans (A votre domicile, en extérieur ou en studio)</p>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"Juste moi"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Séance pour une personne, en extérieur ou en studio</p>
+            </div>
+            <div class="card__price">
+                <p>130€</p>
+            </div>
+        </div>
     </div>
-    <div class="card__price">
-        <p>100€ / la séance</p>
+
+    <! Tarif pour Couple >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/couple.jpg" alt="quotes"/>
+        </div>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"Pour deux"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Pour deux personnes, en extérieur ou en studio</p>
+            </div>
+            <div class="card__price">
+                <p>195€</p>
+            </div>
+        </div>
+    </div>
+
+        <! Tarif pour Mon bébé >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/baby.jpg" alt="quotes"/>
+        </div>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"Mon bébé"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Photo d'enfant jusqu'à 3 ans <br>(photo à domicile)</p>
+            </div>
+            <div class="card__price">
+                <p>100€</p>
+            </div>
+        </div>
+    </div>
+
+    <! Tarif pour Grossesse >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/pregnancy.jpg" alt="quotes"/>
+        </div>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"Il était une fois"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Photo de grossesse <br>(A votre domicile, en extérieur ou en studio)</p>
+            </div>
+            <div class="card__price">
+                <p>160€</p>
+            </div>
+        </div>
+    </div>
+
+    <! Tarif pour tout évènement >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/wedding.jpg" alt="quotes"/>
+        </div>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"J'immortalise l'évènement sur mesure"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Prestation de mariage ou baptème</p>
+            </div>
+            <div class="card__price">
+                <p>Sur devis</p>
+            </div>
+        </div>
+    </div>
+
+    <! Tarif pour Famille >
+    <div class="card">
+        <div class="card__img">
+            <img src="/public/img/400x400/family.jpg" alt="quotes"/>
+        </div>
+        <div class="card__body">
+            <div class="card__title">
+                <p>"Famille"</p>
+            </div>
+            <hr class="card__line">
+            <div class="card__description">
+                <p>Pour la famille ou les amis jusqu'à 4 pers. <br>En extérieur ou en studio</br>
+                30€ en supplément par personne au-delà de 4 <br>(hormis enfant jusqu'à 2 ans)
+                </p>
+            </div>
+            <div class="card__price">
+                <p>220€</p>
+            </div>
+        </div>
     </div>
 </div>
-
-<div class="card">
-    <div class="card__img">
-        <img src="#" alt="quotes" class="card__img"/>
-    </div>
-    <div class="card__title">
-        <p>"Pour deux"</p>
-    </div>
-    <hr class="card__line">
-    <div class="card__text">
-        <p>Pour deux personnes, en extérieur ou en studio</p>
-    </div>
-    <div class="card__price">
-        <p>195€ / la séance<p>
-    </div>
-</div>
-
-<div class="card">
-    <div class="card__img">
-        <img src="#" alt="quotes" class="card__img"/>
-    </div>
-    <div class="card__title">
-        <p>"Juste moi"</p>
-    </div>
-    <hr class="card__line">
-    <div class="card__text">
-        <p>Séance pour une personne, en extérieur ou en studio</p>
-    </div>
-    <div class="card__price">
-        <p>130€ / la séance</p>
-    </div>
-</div>
-    
-    
-
-        <footer>
+            </div>
+            
+        <!footer du site>
+            <footer>
     <p>Copyright 2021 <img src="/public/img/svg/copyright.svg" alt="copyright"> Tous droits réservés</p>
 </footer>
     </div>
-</body>
 <script src="/public/js/app.js"></script>
+</body>
 </html>
