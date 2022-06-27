@@ -1,3 +1,14 @@
+h1 {
+    position: relative;
+    top: 14vh;
+    text-align: center;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 1.5em;
+    font-weight:600;
+    padding-bottom: 1em;
+    color: $darkBlue;
+}
+
 .contact-container{
     position: relative;
     top: 10vh;
@@ -8,14 +19,6 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 20em;
-
-    h1 {
-        font-family: 'Montserrat','sans-serif';
-        font-size: 1.5em;
-        font-weight:600;
-        padding-bottom: 1em;
-        color: $darkBlue;
-    }
     .citation {
         display: flex;
         flex-direction: column;
@@ -63,7 +66,7 @@
             .form__inputText {
                 display: flex;
                 flex-direction: column;
-                font-size: 1em;
+                font-size: 1.1em;
                 margin-bottom: 0.5em;
                 #form__labelText{
                     color: $darkBlue;
@@ -124,10 +127,128 @@
             font-weight: 600;
             font-family: 'Montserrat', 'sans-serif';
             height: 1.8em;
-        }
-        button:hover {
-            transform: scale(1.1);
+            .form__btn {
+
+            }
         }
     }
+}    
 
+@media screen and (min-width: 1280px) {
+    h1 {
+        top: 15vh;
+        text-align: center;
+        font-size: 1.6em;
+        padding-bottom: 1.4em;
+    }
+    .contact-container{
+        position: relative;
+        top: 16vh;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12em;
+        .citation {
+            position: relative;
+            bottom: 20%;
+            img{
+                width: 3em;
+            }
+            p {
+
+                font-weight: 500;
+                width: 85%;
+                padding-top: 2em;
+    
+            }
+            .contact-author {
+                text-align-last:right;
+                padding-bottom: 2em;
+                padding-top: 2em;
+                p {
+                    font-weight: 700;
+                    font-size: 2.3em;
+                }
+            }
+        }
+        .form {
+            .form__title{
+                font-size: 1.4em;
+                font-weight: 500;
+                padding: 0.4em 0 0.4em 0; 
+            }
+            form{
+                padding: 0.5em;
+                margin: 1.4em;
+                width: 35vw;
+                .form__inputText {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1.1em;
+                    margin-bottom: 0.5em;
+                    #form__labelText{
+                        color: $darkBlue;
+                        font-weight: 400;
+                        font-size: 0.9em;
+                        padding:0.5em 1em 0.5em;
+    
+                    }
+                    input {
+                        background-color: $lightPink;
+                        border: none;
+                        border-radius: 20px;
+                        padding: 0.2em;
+                        font-style: italic;
+                        font-weight: 100;
+                        color: $violet;
+                        padding-left: 15px;
+                    }
+                    #comment, #source {
+                        background-color: $lightPink;
+                        border: none;
+                        padding: 0.5em;
+                        border-radius: 20px;
+                        font-style: italic;
+                        font-weight: 100;
+                        font-size: 0.8em;
+                        color: $violet;
+                        text-align-last: left;
+                    }
+                    #comment {
+                        height: 100px;
+                    }
+                    #category-select{
+                        background-color: $lightPink;
+                            border: none;
+                            padding: 0.2em;
+                            border-radius: 20px;
+                            font-style: italic;
+                            font-weight: 100;
+                            color: $violet;
+                    }
+                }
+                .form__detail {
+                    text-align: center;
+                    font-size: 0.7em;
+                    color: $darkBlue;
+                    font-style: italic;
+                }
+            }
+            button {
+                margin:0.5em auto;
+                border-radius: 30px;
+                background-color: $darkBlue;
+                color: white;
+                width: 60%;
+                border: none;
+                font-size: 1.3em;
+                font-weight: 600;
+                font-family: 'Montserrat', 'sans-serif';
+                height: 1.8em;
+            }
+            button:hover {
+                transform: scale(1.1);
+            }
+        }
+    
+    }
 }
