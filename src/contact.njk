@@ -1,63 +1,58 @@
 ---
 layout: layout.njk
 ---
+<div class="contact-container">
+    <h1>Formulaire de contact</h1>
+    <div class="citation">
+        <img src="/public/img/svg/quote.svg" alt="quotes"/>
+        <p>Ce que j’aime dans les photos, c’est qu’elles capturent
+        un moment qui est parti pour toujours, impossible à reproduire.
+        </p>
+        <p class="contact-author"><strong>Karl Lagerfeld</strong></p>
+    </div>
 
-<h1 class="contact-title">Contactez-moi</h1>
-<div class="citation">
-<img src="/public/img/svg/quote.svg" alt="quotes"/>
-<p class="contact__text">Ce que j’aime dans les photo c’est qu’elles capturent
-un moment qui est parti pour toujours, impossible à reproduire.
-</p>
-<p class="contact-author"><strong>Karl Lagerfeld</strong></p>
-</div>
+    <div class="form">
+        <div class="form__title">Demande de devis</div>
+            <form name="contact" method="post" data-netlify="true">
+                <div class="form__inputText">
+                    <label for="email" id="form__labelText">Email*</label>
+                    <input type="email" id="email" name="email">
 
-<div class="form">
-    <div class="form__title">Demande de devis</div>
-        <form action="#" method="post">
-            <div>
-                <label for="email" id="form__labelText">Email*</label>
-                <input type="email" id="email" name="email" class="form__inputbkg">
-            </div>
-            <div>
-                <label for="name" id="form__labelText">Nom et prénom*</label>
-                <input type="text" id="name" name="name" class="form__inputbkg">
-            </div>
-            <div>
-                <label for="telephone" id="form__labelText">Téléphone</label>
-                <input type="telephone" id="telephone" name="telephone" class="form__inputbkg">
-            </div>
-            <div>
-                <label for="date" id="form__labelText">Date souhaité</label>
-                <input type="date" id="date" name="date" value="jj/mm/aaa" class="form__inputbkg">
-            </div>
-            <div>
-                <label for="locate" id="form__labelText">Localisation/Ville</label>
-                <input type="text" id="locate" name="locate" class="form__inputbkg">
-            </div>
-            <div>
-                 <select name="category" id="category-select"  class="form__inputbkg">
-                    <option value="Choisir une catégorie" id="form__labelText">Type d'évènement</option>
-                    <option value="grossesse">Grossesse</option>
-                    <option value="mariage">Mariage</option>
-                    <option value="portrait">Portrait</option>
-                    <option value="famille">Famille</option>
-                    <option value="couple">Couple</option>
-                    <option value="bébé">Bébé</option>
-                </select>
-            </div>
-            <div>
-                <label for="budget" id="form__labelText">Budget approximative</label>
-                <input type="number" id="budget" name="budget"  class="form__inputbkg">
-            </div>
-            <div>
-                <label for="source" id="form__labelText">Par quel biais, m'avez-vous trouvé ?</label>
-                <input type="text" id="source" name="source"  class="form__inputbkg" value="Instagram, Facebook, Google, des proches...">
-            </div>
-            <div>
-                <label for="comment" id="form__labelText">Commentaires</label>
-                <textarea id="comment" name="comment"  class="form__inputbkg">Expliquez en quelques lignes, ce que vous souhaiter retenir de cette journée</textarea>
-            </div>
-            <p class="form__detail">*Informations obligatoires</p>
-        </form>
-        <button class="form__btn">Envoyer <img src="/public/img/svg/plane.svg" alt="plane"/></button>
+                    <label for="name" id="form__labelText">Nom et prénom*</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="telephone" id="form__labelText">Téléphone</label>
+                    <input type="telephone" id="telephone" name="telephone">
+
+                    <label for="date" id="form__labelText">Date souhaité</label>
+                    <input type="date" id="date" name="date" value="jj/mm/aaa">
+
+                    <label for="locate" id="form__labelText">Localisation/Ville</label>
+                    <input type="text" id="locate" name="locate">
+
+                    <label for="category" id="form__labelText">Type d'évènement</label>
+                    <select name="category" id="category-select">
+                        <option value="Choisir une catégorie" id="form__labelText">Choisir une catégorie</option>
+                        <option value="grossesse">Grossesse</option>
+                        <option value="mariage">Mariage</option>
+                        <option value="portrait">Portrait</option>
+                        <option value="famille">Famille</option>
+                        <option value="couple">Couple</option>
+                        <option value="bébé">Bébé</option>
+                    </select>
+
+                    <label for="budget" id="form__labelText">Budget approximative</label>
+                    <input type="number" id="budget" name="budget">
+
+                    <label for="source" id="form__labelText">Par quel biais, m'avez-vous trouvé ?</label>
+                    <input type="text" id="source" name="source" class="form__inputbkg" value="Instagram, Facebook, Google...">
+
+                    <label for="comment" id="form__labelText">Commentaires</label>
+                    <textarea id="comment" name="comment" class="form__inputbkg">Expliquez en quelques lignes, ce que vous souhaiter retenir de cette journée</textarea>
+                </div>
+                <p class="form__detail">*Informations obligatoires</p>
+                <button>Envoyer <img src="/public/img/svg/plane.svg" alt="plane"/></button>
+            </form>
+        </div>
+    </div>
 </div>
