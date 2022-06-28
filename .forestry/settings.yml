@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
 - type: document
-  path: public
+  path: public/pages
   label: pages
 upload_dir: ''
 public_path: "/public/upload"
